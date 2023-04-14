@@ -133,7 +133,7 @@ const DoctorCardList = () => {
   return (
     <View style={styles.container1}>
       <ImageBackground
-        source={require("../assets/back4.jpeg")}
+        source={require("../assets/lupe1.jpg")}
         resizeMode="cover"
         style={styles.image1}
       >
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     marginRight: 20,
   },
   card: {
-    backgroundColor: "#eaf5f3bb",
+    backgroundColor: "#646565ba",
     borderRadius: 10,
     padding: 15,
     marginBottom: 60,
@@ -270,15 +270,15 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "bold",
     alignSelf: "center",
+    color:"white"
     
   },
   
   buttonForm3: {
     borderRadius: 50,
-    width:"20%",
     padding: 10,
     margin: 8,
-    marginRight:10,
+    marginRight:1,
     backgroundColor: "#29fe04",
     marginBottom:-10
   },
@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     padding: 10,
     margin: 8,
-    marginRight:85,
+    marginRight:60,
     backgroundColor: "#29fe04",
     marginBottom:-10
   },

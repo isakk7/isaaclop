@@ -25,19 +25,23 @@ const Detail = ({route}) => {
     return (
         <View style={styles.container1}>
             <ImageBackground
-          source={require("../assets/back4.jpeg")}
+          source={require("../assets/back2.png")}
           resizeMode="cover"
           style={styles.image1}
         >
-        <View style={styles.container}>
+            <View style={styles.container}>
+                
+        <View style={styles.container2}>
+            <View style={styles.container3}>
             <TextInput
                 style={styles.textField}
                 onChangeText={onChangeHeadingText}S
                 value={textHeading}
                 placeholder="Update Note"
                 multiline={true}
-					numberOfLines={10}
+					numberOfLines={100}
             />
+            </View>
             <Pressable
             style={styles.buttonUpdate}
             onPress={() => {updateTodo()}}
@@ -47,6 +51,7 @@ const Detail = ({route}) => {
             </Pressable>
 
         </View>
+        </View>
         </ImageBackground>
         </View>
     )
@@ -55,12 +60,31 @@ export default Detail
 
 const styles = StyleSheet.create({
     container:{
-        marginTop: -400,
+        marginTop: -300,
         marginLeft: 15,
         marginRight: 15,
+        
     },
     container1: {
         flex: 1,
+      },
+      container2:{
+        padding: "10%",
+		alignItems: "left",
+		justifyContent: "center",
+		width: "85%",
+		margin: "10%",
+    marginLeft: 30,
+    marginTop: 90,
+		backgroundColor: "rgba(216, 216, 216, 0.422)",
+		borderRadius: 15,
+		elevation: 8,
+		marginBottom: "-30%",
+      },
+      container3:{
+         width:"100%",
+         marginBottom:30,
+
       },
       image1: {
         flex: 1,
@@ -73,6 +97,7 @@ const styles = StyleSheet.create({
         color: '#000000',
         backgroundColor:'#e0e0e0',
         borderRadius: 5,
+        height: 200,
     },
     buttonUpdate: {
         marginTop: 25,
@@ -82,6 +107,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 4,
         elevation: 10,
+        width:"100%",
         backgroundColor: "#22f7d485",
     }
 })

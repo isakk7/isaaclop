@@ -74,7 +74,7 @@ import {
       
       <View style={styles.container1}>
       <ImageBackground
-            source={require("../assets/back4.jpeg")}
+            source={require("../assets/1.jpg")}
             resizeMode="cover"
             style={styles.image1}
           >
@@ -94,6 +94,7 @@ import {
             <Text style={styles.buttonText}>Add</Text>
           </TouchableOpacity>
         </View>
+        <View  style={styles.container2}>
         <FlatList
           data={todos}
           numColumns={1}
@@ -120,6 +121,7 @@ import {
           )}
           keyExtractor={(item) => item.id}
         />
+        </View>
         </ImageBackground>
       </View>
       
@@ -130,17 +132,34 @@ import {
   
   const styles = StyleSheet.create({
     container: {
-     backgroundColor: "#f1efef85",
+     backgroundColor: "#f9e338ed",
       padding: 15,
       borderRadius: 10,
       margin: 5,
       marginTop:20,
-      marginLeft: 30,
+      marginLeft: 10,
       marginRight: 30,
       marginHorizontal: 10,
       flexDirection: "row",
       alignItems: "center",
+      width:"95%"
+     
     },
+    container2: {
+      backgroundColor: "#f1efef85",
+       padding: 15,
+       borderRadius: 10,
+       margin: 5,
+       marginTop:20,
+       marginBottom:250,
+       marginLeft: 30,
+       marginRight: 30,
+       marginHorizontal: 10,
+       flexDirection: "row",
+       alignItems: "center",
+      
+     },
+  
     container1: {
       flex: 1,
     
@@ -148,7 +167,7 @@ import {
     innerContainer: {
       alignItems: "center",
       flexDirection: "column",
-      marginLeft: 45,
+      marginLeft: 30,
     },
     itemHeading: {
       fontWeight: "bold",
@@ -160,7 +179,8 @@ import {
       height: 80,
       marginLeft: 30,
       marginRight: 10,
-      marginTop: 80,
+      marginTop: 200,
+      alignItems:"center"
     },
     input: {
       height: 48,
@@ -170,18 +190,21 @@ import {
       paddingLeft: 16,
       flex: 1,
       marginRight: 5,
+      
+      
     },
     button: {
       height: 47,
       borderRadius: 5,
-      backgroundColor: "#788ee",
+      backgroundColor: "#ecf4f4ebe",
       width: 80,
       alignItems: "center",
       justifyContent: "center",
     },
     buttonText: {
-      color: "black",
+      color: "white",
       fontSize: 20,
+      fontWeight:"bold"
     },
     todoIcon: {
       marginTop: 5,

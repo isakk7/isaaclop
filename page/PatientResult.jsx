@@ -116,7 +116,7 @@ const DoctorCardList = () => {
   return (
     <View style={styles.container1}>
       <ImageBackground
-        source={require("../assets/back4.jpeg")}
+        source={require("../assets/1.jpg")}
         resizeMode="cover"
         style={styles.image1}
       >
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#eaf5f3bb",
     borderRadius: 10,
     padding: 20,
-    marginBottom: 80,
+    marginBottom: 100,
   },
   image: {
     width: 200,
@@ -263,6 +263,7 @@ const styles = StyleSheet.create({
   searchBarContainer:{
     marginTop:-30,
     marginLeft:-10,
+    marginBottom: 50,
     width:"105%",
     
   },

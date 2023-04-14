@@ -83,7 +83,7 @@ const PatientForm = () => {
     <View style={styles.container}>
       
       <ImageBackground
-        source={require("../assets/back4.jpeg")}
+        source={require("../assets/1.jpg")}
         resizeMode="cover"
         style={styles.image}
       >
@@ -277,7 +277,7 @@ const styles = StyleSheet.create({
 		backgroundColor: "rgba(216, 216, 216, 0.422)",
 		borderRadius: 15,
 		elevation: 8,
-		marginBottom: "-30%",
+		marginBottom: "-20%",
 	
   },
   input: {
@@ -343,10 +343,10 @@ const styles = StyleSheet.create({
     marginLeft:-15,
   },
   Text:{
-    color:"#000000f9",
+    color:"#fcfafa",
     fontWeight:"bold",
-    fontSize:20,
-    marginLeft:55,
+    fontSize:25,
+    marginLeft:40,
     marginTop:-50,
     marginBottom: 30,
 

@@ -105,7 +105,7 @@ const SurgeryForm = () => {
     <View style={styles.container}>
       
       <ImageBackground
-        source={require("../assets/back4.jpeg")}
+        source={require("../assets/bac1.png")}
         resizeMode="cover"
         style={styles.image}
       >

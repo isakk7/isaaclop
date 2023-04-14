@@ -87,7 +87,7 @@ const SurgeryResult = () => {
           style={styles.buttonForm1}
           onPress={() => navigation.navigate("DailyForm")}
         >
-          <Text style={styles.textStyle}>Daily form</Text>
+          <Text style={styles.textStyle}>DailyForm</Text>
         </TouchableHighlight>
       </View>
     </View>
@@ -127,7 +127,7 @@ const SurgeryResult = () => {
   return (
     <View style={styles.container1}>
       <ImageBackground
-        source={require("../assets/back4.jpeg")}
+        source={require("../assets/bac1.png")}
         resizeMode="cover"
         style={styles.image1}
       >

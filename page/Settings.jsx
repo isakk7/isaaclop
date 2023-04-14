@@ -89,7 +89,7 @@ const Settings = () => {
   return (
     <View style={styles.container1}>
       <ImageBackground
-        source={require("../assets/back4.jpeg")}
+        source={require("../assets/bac1.png")}
         resizeMode="cover"
         style={styles.image1}
       >
@@ -101,12 +101,12 @@ const Settings = () => {
               <Text>No photo</Text>
             )}
 
-            <TouchableOpacity
-              onPress={handleChoosePhoto}
-              style={styles.choosePhotoButton}
-            >
-              <Text style={styles.choosePhotoButtonText}>Upload photo</Text>
-            </TouchableOpacity>
+<TouchableOpacity
+  onPress={handleChoosePhoto}
+  style={styles.choosePhotoButton}
+>
+  <MaterialIcons name="add-a-photo" size={40} color="black" />
+</TouchableOpacity>
           </View>
           <ScrollView  style={styles.scroll}>
             <TouchableOpacity style={styles.input2} onPress={() => setIsEditEmail(true)}>
@@ -115,15 +115,15 @@ const Settings = () => {
             </TouchableOpacity>
             {isEditEmail && (
               <>
-                <TextInput
-                  style={styles.input}
-                  placeholder="New email"
-                  value={newEmail}
-                  onChangeText={(text) => setNewEmail(text)}
-                />
+              <TextInput
+              style={[styles.input, {color: 'red'}]}
+              placeholder="New email"
+              value={newEmail}
+              onChangeText={(text) => setNewEmail(text)}
+            />
                 <TouchableOpacity
                   onPress={handleUpdateEmail}
-                  style={styles.button}
+                  style={styles.button6}
                 >
                   <Text style={styles.buttonText}>Update email</Text>
                 </TouchableOpacity>
@@ -159,7 +159,7 @@ const Settings = () => {
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.button}
-              onPress={() => navigation.navigate("Home")}
+              onPress={() => navigation.navigate("CardList")}
             >
               <Text style={styles.buttonText}>Patients</Text>
             </TouchableOpacity>
@@ -187,7 +187,12 @@ const Settings = () => {
             >
               <Text style={styles.buttonText}>Surgery Records</Text>
             </TouchableOpacity>
-          
+            {/* <TouchableOpacity
+              style={styles.button1}
+              onPress={() => navigation.navigate("UsersScreen")}
+            >
+              <Text style={styles.buttonText}>Users</Text>
+            </TouchableOpacity> */}
             <TouchableOpacity
               style={styles.button1}
               onPress={() => navigation.navigate("Map")}
@@ -230,9 +235,12 @@ const styles = StyleSheet.create({
   },
   choosePhotoButton: {
     marginTop: 10,
+    marginTop: 30,
+    marginBottom: 10
   },
   choosePhotoButtonText: {
-    color: "blue",
+    color: "#f5f2f28",
+    fontSize:120
   },
   button: {
     marginTop: 20,
@@ -245,6 +253,14 @@ const styles = StyleSheet.create({
   button1: {
     marginTop: 20,
     backgroundColor: "#0032f8b3",
+    padding: 10,
+    borderRadius: 5,
+    width: "97%",
+    alignItems: "center",
+  },
+  button6: {
+    marginTop: 20,
+    backgroundColor: "#25f800b3",
     padding: 10,
     borderRadius: 5,
     width: "97%",
@@ -275,7 +291,7 @@ const styles = StyleSheet.create({
   },
   input: {
     alignSelf: "center",
-    backgroundColor: "#64fafae2",
+    backgroundColor: "#9d9f9fee",
     fontWeight: "bold",
     width: "95%",
     padding: 15,
@@ -289,7 +305,7 @@ const styles = StyleSheet.create({
   },
   input2:{
     alignSelf: "center",
-    backgroundColor: "#64fafae2",
+    backgroundColor: "#fdf637f6",
     fontWeight: "bold",
     width: "95%",
     padding: 5,

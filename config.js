@@ -4,14 +4,14 @@ import "firebase/compat/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCXpZlXVda4i6tSEMAoHHwApO_HLZ1D9Ko",
-  authDomain: "to-do-416ea.firebaseapp.com",
-  projectId: "to-do-416ea",
-  storageBucket: "to-do-416ea.appspot.com",
-  messagingSenderId: "878837940425",
-  appId: "1:878837940425:web:99aac9b0801cb55d5ccd18",
-  measurementId: "G-NEW963KB4M",
+  apiKey: "AIzaSyDn7feONgHk8dxX4CqEavWHBfcEMm_wgEg",
+  authDomain: "pedro-aa115.firebaseapp.com",
+  projectId: "pedro-aa115",
+  storageBucket: "pedro-aa115.appspot.com",
+  messagingSenderId: "660114236714",
+  appId: "1:660114236714:web:6bccd8caa51ab93156ea53"
 };
+
 
 if (!firebase.apps.length){
     firebase.initializeApp(firebaseConfig)

@@ -62,7 +62,7 @@ const DoctorCardForm = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require("../assets/back2.png")}
+        source={require("../assets/lupe1.jpg")}
         resizeMode="cover"
         style={styles.image}
       >
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   formContainer: {
-    backgroundColor: "#f1efef85",
+    backgroundColor: "#80808085",
     padding: 15,
     borderRadius: 10,
     margin: 5,

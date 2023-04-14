@@ -73,7 +73,7 @@ const SurgeryResultUpdate = ({ route, navigation }) => {
   return (
     <View style={styles.container1}>
       <ImageBackground
-        source={require("../assets/back2.png")}
+        source={require("../assets/1.jpg")}
         resizeMode="cover"
         style={styles.image}
       >

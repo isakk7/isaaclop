@@ -111,7 +111,7 @@ const CardList = () => {
   return (
     <View style={styles.container1}>
       <ImageBackground
-        source={require("../assets/back4.jpeg")}
+        source={require("../assets/lupe2.jpg")}
         resizeMode="cover"
         style={styles.image1}
       >
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginLeft: 20,
     marginRight: 20,
-    marginBottom: 70
+    marginBottom: 50
   },
   card: {
     backgroundColor: "#eaf5f3bb",

@@ -24,6 +24,8 @@ import SurgeryResult from "../page/SurgeryResult"
 import DoctorUpdate from "../page/DoctorUpdate";
 import PatientResultUpdate from "../page/PatientResultUpddate";
 import SurgeryResultUpdate from "../page/SurgeryResultUpdate";
+import UsersScreen from "../page/Users";
+import CardList from "../page/Home"
 
 const Stack = createNativeStackNavigator();
 
@@ -64,6 +66,7 @@ export default function Navigation () {
           component={MyTabs}
           options={{ headerShown: false}}
         />
+        <Stack.Screen name="CardList" component={CardList}  options={{ headerShown: false }} />
         <Stack.Screen name="DailyForm" component={DailyForm}  options={{ headerShown: false }} />
         <Stack.Screen name="Notifications" component={Notifications}  options={{ headerShown: true }} />
         <Stack.Screen name="Map" component={Map}  options={{ headerShown: false }} />
@@ -83,7 +86,8 @@ export default function Navigation () {
         <Stack.Screen name="DoctorUpdate" component={DoctorUpdate}  options={{ headerShown: false }} />
         <Stack.Screen name="PatientResultUpdate" component={PatientResultUpdate}  options={{ headerShown: false }} />
         <Stack.Screen name="SurgeryResultUpdate" component={SurgeryResultUpdate}  options={{ headerShown: false }} />
-        
+        <Stack.Screen name="UsersScreen" component={UsersScreen}  options={{ headerShown: false }} />
+
         <Stack.Screen
           name="PatientInformation"
           component={PatientInformation}

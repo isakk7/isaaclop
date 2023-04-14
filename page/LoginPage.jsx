@@ -45,7 +45,7 @@ const LoginScreen = () => {
   return (
     <View style={styles.container1}>
        <ImageBackground
-        source={require("../assets/back.jpeg")}
+        source={require("../assets/bac.jpg")}
         resizeMode="cover"
         style={styles.image1}
       >
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     margin: "auto",
     alignItems: "center",
-    marginTop: "40%",
+    marginTop: "30%",
     marginLeft: "7%",
     marginRight: "7%",
     borderRadius: 20,
